@@ -39,7 +39,13 @@ Todos tem foto, uma descricao e o preco.
 
 SERVICOS
 
-Sao 3 servicos: banho e tosa, consulta veterinaria e tele-busca.
+Sao 4 servicos, todos com o valor na pagina:
+
+Banho e Tosa - R$ 70,00, com tele-busca
+Consulta Veterinaria - R$ 120,00, com tele-busca
+Adestramento Basico - R$ 90,00, sem tele-busca (o tutor leva o pet na loja)
+Tele-busca - R$ 25,00 ida e volta em Porto Alegre
+
 A tele-busca e quando a loja vai buscar o pet na casa do cliente
 e depois leva de volta. Para agendar qualquer um deles a pessoa
 liga no (51) 99999-0000.
