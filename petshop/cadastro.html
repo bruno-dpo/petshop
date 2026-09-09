@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Cadastro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mundo Pet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center mt-3">
+            <h1>Cadastro de Cliente e Pet</h1>
+            <p class="hora-atual" id="relogio">Carregando...</p>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <p>Preencha os dados abaixo para se cadastrar na loja.</p>
+
+        <form action="#" method="post" onsubmit="return enviarCadastro()">
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="float-none w-auto px-2">Dados do cliente</legend>
+
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome completo:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF:</label>
+                    <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Rua, número, bairro" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(51) 99999-0000" required>
+                </div>
+
+                <div class="mb-3">
+                    <p>Sexo:</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="M" required>
+                        <label class="form-check-label" for="sexoM">Masculino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="F">
+                        <label class="form-check-label" for="sexoF">Feminino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sexo" id="sexoO" value="O">
+                        <label class="form-check-label" for="sexoO">Outro</label>
+                    </div>
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label class="form-check-label" for="newsletter">Quero receber promoções por e-mail</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="float-none w-auto px-2">Dados do pet</legend>
+
+                <div class="mb-3">
+                    <label for="nomePet" class="form-label">Nome do pet:</label>
+                    <input type="text" class="form-control" id="nomePet" name="nomePet" placeholder="Nome do animal" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="raca" class="form-label">Raça:</label>
+                    <input type="text" class="form-control" id="raca" name="raca" placeholder="Ex: Labrador, SRD" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="idade" class="form-label">Idade (anos):</label>
+                    <input type="number" class="form-control" id="idade" name="idade" min="0" max="30" placeholder="0" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tamanho" class="form-label">Tamanho do pet (1 pequeno até 5 grande):</label>
+                    <input type="range" class="form-range" id="tamanho" name="tamanho" min="1" max="5" value="3">
+                </div>
+
+                <div class="mb-3">
+                    <label for="tipoPet" class="form-label">Tipo:</label>
+                    <select class="form-select" id="tipoPet" name="tipoPet" required>
+                        <option value="">Selecione</option>
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="obs" class="form-label">Observações:</label>
+                    <textarea class="form-control" id="obs" name="obs" rows="3" placeholder="Alergias, cuidados especiais..."></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="reset" class="btn btn-secondary ms-2">Limpar</button>
+        </form>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3>Mundo Pet</h3>
+            <p>Rua dos Pets, 123 — Porto Alegre/RS</p>
+            <p>Telefone: (51) 99999-0000 | E-mail: contato@mundopet.com.br</p>
+            <p>Atendimento: segunda a sábado, das 8h às 18h</p>
+            <p>Site desenvolvido por Bruno H Menezes — Fundamentos de Sistemas Web</p>
+            <p>
+                <a href="index.html">Início</a> |
+                <a href="produtos.html">Produtos</a> |
+                <a href="servicos.html">Serviços</a> |
+                <a href="cadastro.html">Cadastro</a> |
+                <a href="agendamento.html">Agendamento</a> |
+                <a href="contato.html">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

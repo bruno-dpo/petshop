@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Serviços</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mundo Pet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center mt-3">
+            <h1>Serviços</h1>
+            <p class="hora-atual" id="relogio">Carregando...</p>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <p>Oferecemos banho e tosa com agendamento. Você pode levar o pet na loja ou pedir tele-busca.</p>
+
+        <section class="mb-4">
+            <h2>Valores</h2>
+            <table class="table table-bordered">
+                <caption>Tabela de preços dos serviços</caption>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Valor</th>
+                        <th>Tele-busca</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banho</td>
+                        <td>R$ 50,00</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Tosa</td>
+                        <td>R$ 70,00</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Tele-busca (ida e volta)</td>
+                        <td>R$ 25,00</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="mb-4">
+            <h2>Banho</h2>
+            <article class="card mb-3">
+                <div class="card-body">
+                    <h3 class="h5">Banho Completo</h3>
+                    <p>Banho com produtos de qualidade, secagem e higiene das orelhas e patas.</p>
+                    <p><strong>Valor: R$ 50,00</strong></p>
+                    <a href="agendamento.html" class="btn btn-success">Agendar banho</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-4">
+            <h2>Tosa</h2>
+            <article class="card mb-3">
+                <div class="card-body">
+                    <h3 class="h5">Tosa Higiênica e Completa</h3>
+                    <p>Tosa conforme a raça do pet, com corte nas unhas e finalização.</p>
+                    <p><strong>Valor: R$ 70,00</strong></p>
+                    <a href="agendamento.html" class="btn btn-success">Agendar tosa</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-4">
+            <h2>Como funciona</h2>
+            <ul>
+                <li><strong>Entrega no local:</strong> você traz o pet na data e horário agendados.</li>
+                <li><strong>Tele-busca:</strong> buscamos o pet em casa e devolvemos depois do serviço.</li>
+            </ul>
+            <p>Para agendar, use a página de <a href="agendamento.html">Agendamento</a> ou ligue (51) 99999-0000.</p>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3>Mundo Pet</h3>
+            <p>Rua dos Pets, 123 — Porto Alegre/RS</p>
+            <p>Telefone: (51) 99999-0000 | E-mail: contato@mundopet.com.br</p>
+            <p>Atendimento: segunda a sábado, das 8h às 18h</p>
+            <p>Site desenvolvido por Bruno H Menezes — Fundamentos de Sistemas Web</p>
+            <p>
+                <a href="index.html">Início</a> |
+                <a href="produtos.html">Produtos</a> |
+                <a href="servicos.html">Serviços</a> |
+                <a href="cadastro.html">Cadastro</a> |
+                <a href="agendamento.html">Agendamento</a> |
+                <a href="contato.html">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Produtos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mundo Pet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center mt-3">
+            <h1>Produtos</h1>
+            <p class="hora-atual" id="relogio">Carregando...</p>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <p>Confira nossa seleção de produtos para cães e gatos.</p>
+
+        <section class="mb-5">
+            <h2>Acessórios</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/bolinha.jpg" class="card-img-top" alt="Bolinha de borracha colorida para cães brincarem">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Bolinha de Borracha</h3>
+                            <p>Brinquedo resistente para cães de todos os portes.</p>
+                            <p><strong>R$ 19,90</strong></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/cama-pet.jpg" class="card-img-top" alt="Cama macia para pets descansarem">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Cama para Pet</h3>
+                            <p>Cama macia e confortável para o descanso do seu pet.</p>
+                            <p><strong>R$ 89,90</strong></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2>Rações não perecíveis</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/racao-premium.jpg" class="card-img-top" alt="Sacos de ração premium para cães adultos">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Ração Premium Cães Adultos</h3>
+                            <p>Ração completa para cães adultos de porte médio e grande.</p>
+                            <p><strong>R$ 89,90</strong></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/racao-filhotes.jpg" class="card-img-top" alt="Filhote de cachorro comendo ração">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Ração Filhotes Sabor Frango</h3>
+                            <p>Ração especial para filhotes em fase de crescimento.</p>
+                            <p><strong>R$ 74,50</strong></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h2>Higiene e limpeza</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/shampoo.jpg" class="card-img-top" alt="Produtos de higiene e shampoo para pets">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Shampoo Antipulgas</h3>
+                            <p>Shampoo que ajuda a eliminar pulgas e carrapatos.</p>
+                            <p><strong>R$ 34,90</strong></p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <article class="card card-produto h-100">
+                        <img src="imagens/tapete.jpg" class="card-img-top" alt="Tapete higiênico absorvente para pets">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Tapete Higiênico</h3>
+                            <p>Tapete absorvente para treinamento e higiene do pet.</p>
+                            <p><strong>R$ 39,90</strong></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3>Mundo Pet</h3>
+            <p>Rua dos Pets, 123 — Porto Alegre/RS</p>
+            <p>Telefone: (51) 99999-0000 | E-mail: contato@mundopet.com.br</p>
+            <p>Atendimento: segunda a sábado, das 8h às 18h</p>
+            <p>Site desenvolvido por Bruno H Menezes — Fundamentos de Sistemas Web</p>
+            <p>
+                <a href="index.html">Início</a> |
+                <a href="produtos.html">Produtos</a> |
+                <a href="servicos.html">Serviços</a> |
+                <a href="cadastro.html">Cadastro</a> |
+                <a href="agendamento.html">Agendamento</a> |
+                <a href="contato.html">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

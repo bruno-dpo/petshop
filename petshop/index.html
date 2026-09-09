@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Página Inicial</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mundo Pet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center mt-3">
+            <h1>Mundo Pet</h1>
+            <p>Tudo para o seu pet em um só lugar.</p>
+            <p class="hora-atual" id="relogio">Carregando data e hora...</p>
+        </div>
+    </header>
+
+    <main class="container my-4">
+
+        <!-- carrossel de imagens -->
+        <div id="carrosselPet" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrosselPet" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrosselPet" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrosselPet" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/banner1.jpg" class="d-block w-100" alt="Cachorro recebendo banho e tosa no pet shop">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/banner2.jpg" class="d-block w-100" alt="Produtos de pet shop com rações e acessórios">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/banner3.jpg" class="d-block w-100" alt="Cachorro feliz depois do banho">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPet" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselPet" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <section class="mb-4">
+            <h2>Bem-vindo ao Mundo Pet</h2>
+            <p>Somos um pet shop em Porto Alegre com rações, acessórios, produtos de higiene e serviços de banho e tosa.
+                Atendemos de segunda a sábado, das 8h às 18h.</p>
+        </section>
+
+        <section class="mb-4">
+            <h2>Nossos produtos</h2>
+            <p>Trabalhamos com três categorias:</p>
+            <ul>
+                <li><strong>Acessórios</strong> — brinquedos, camas e coleiras</li>
+                <li><strong>Rações</strong> — para filhotes e adultos</li>
+                <li><strong>Higiene</strong> — shampoo e tapete higiênico</li>
+            </ul>
+            <a href="produtos.html" class="btn btn-warning">Ver produtos</a>
+        </section>
+
+        <section class="mb-4">
+            <h2>Nossos serviços</h2>
+            <p>Banho e tosa com agendamento. Você pode levar o pet na loja ou pedir tele-busca.</p>
+            <a href="servicos.html" class="btn btn-outline-dark me-2">Ver serviços</a>
+            <a href="agendamento.html" class="btn btn-success">Agendar agora</a>
+        </section>
+
+        <section class="mb-4">
+            <h2>Cadastre-se</h2>
+            <p>Faça seu cadastro de cliente e pet para agilizar o atendimento.</p>
+            <a href="cadastro.html" class="btn btn-primary">Ir para cadastro</a>
+        </section>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3>Mundo Pet</h3>
+            <p>Rua dos Pets, 123 — Porto Alegre/RS</p>
+            <p>Telefone: (51) 99999-0000 | E-mail: contato@mundopet.com.br</p>
+            <p>Atendimento: segunda a sábado, das 8h às 18h</p>
+            <p>Site desenvolvido por Bruno H Menezes — Fundamentos de Sistemas Web</p>
+            <p>
+                <a href="index.html">Início</a> |
+                <a href="produtos.html">Produtos</a> |
+                <a href="servicos.html">Serviços</a> |
+                <a href="cadastro.html">Cadastro</a> |
+                <a href="agendamento.html">Agendamento</a> |
+                <a href="contato.html">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Agendamento</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mundo Pet</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center mt-3">
+            <h1>Agendamento de Serviços</h1>
+            <p class="hora-atual" id="relogio">Carregando...</p>
+        </div>
+    </header>
+
+    <main class="container my-4">
+        <p>Agende banho ou tosa. Escolha tele-busca ou entrega do pet no local.</p>
+
+        <form action="#" method="post" onsubmit="return enviarAgendamento()">
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="float-none w-auto px-2">Serviço</legend>
+
+                <div class="mb-3">
+                    <label for="servico" class="form-label">Escolha o serviço:</label>
+                    <select class="form-select" id="servico" name="servico" required>
+                        <option value="">Selecione</option>
+                        <option value="Banho">Banho - R$ 50,00</option>
+                        <option value="Tosa">Tosa - R$ 70,00</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <p>Forma de atendimento:</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma" id="telebusca" value="Tele-busca" required>
+                        <label class="form-check-label" for="telebusca">Tele-busca (buscamos o pet em casa)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="forma" id="local" value="Entrega no local">
+                        <label class="form-check-label" for="local">Entrega do pet no local (você leva na loja)</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="float-none w-auto px-2">Data e horário</legend>
+
+                <div class="mb-3">
+                    <label for="dataAgenda" class="form-label">Data do agendamento:</label>
+                    <input type="date" class="form-control" id="dataAgenda" name="dataAgenda" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="horaAgenda" class="form-label">Horário:</label>
+                    <input type="time" class="form-control" id="horaAgenda" name="horaAgenda" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-3 mb-4 rounded">
+                <legend class="float-none w-auto px-2">Seus dados</legend>
+
+                <div class="mb-3">
+                    <label for="nomeCliente" class="form-label">Seu nome:</label>
+                    <input type="text" class="form-control" id="nomeCliente" name="nomeCliente" placeholder="Nome do tutor" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="nomePetAgenda" class="form-label">Nome do pet:</label>
+                    <input type="text" class="form-control" id="nomePetAgenda" name="nomePetAgenda" placeholder="Nome do animal" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telAgenda" class="form-label">Telefone:</label>
+                    <input type="tel" class="form-control" id="telAgenda" name="telAgenda" placeholder="(51) 99999-0000" required>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-success">Confirmar agendamento</button>
+        </form>
+
+        <p class="mt-3">Ainda não tem cadastro? <a href="cadastro.html">Cadastre-se aqui</a>.</p>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <h3>Mundo Pet</h3>
+            <p>Rua dos Pets, 123 — Porto Alegre/RS</p>
+            <p>Telefone: (51) 99999-0000 | E-mail: contato@mundopet.com.br</p>
+            <p>Atendimento: segunda a sábado, das 8h às 18h</p>
+            <p>Site desenvolvido por Bruno H Menezes — Fundamentos de Sistemas Web</p>
+            <p>
+                <a href="index.html">Início</a> |
+                <a href="produtos.html">Produtos</a> |
+                <a href="servicos.html">Serviços</a> |
+                <a href="cadastro.html">Cadastro</a> |
+                <a href="agendamento.html">Agendamento</a> |
+                <a href="contato.html">Contato</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

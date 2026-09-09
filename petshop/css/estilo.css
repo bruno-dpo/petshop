@@ -1,0 +1,41 @@
+/* estilos do site Mundo Pet */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header h1 {
+    color: #e67e22;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffc107;
+}
+
+.card-produto img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    height: 380px;
+    object-fit: cover;
+}
+
+.hora-atual {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* destaque no teclado (acessibilidade) */
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #e67e22;
+}

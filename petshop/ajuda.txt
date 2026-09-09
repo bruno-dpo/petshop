@@ -1,0 +1,94 @@
+ARQUIVO DE AJUDA - SITE MUNDO PET (FASE 2)
+
+Aluno: Bruno H Menezes
+Disciplina: Fundamentos de Sistemas Web
+
+Este site é de um pet shop chamado Mundo Pet, em Porto Alegre.
+A Fase 2 adicionou CSS, Bootstrap, JavaScript, cadastro e agendamento.
+
+
+PÁGINAS DO SITE
+
+- index.html: página inicial com carrossel de imagens e relógio na tela
+- produtos.html: produtos em 3 categorias (acessórios, rações, higiene)
+- servicos.html: banho e tosa, com tabela de preços
+- cadastro.html: formulário de cadastro do cliente e do pet
+- agendamento.html: agendar banho ou tosa com data e horário
+- contato.html: dados da loja e formulário de mensagem
+
+
+O QUE FOI ADICIONADO NA FASE 2
+
+1) CSS e Bootstrap
+   - Menu que funciona no celular
+   - Carrossel de imagens na página inicial
+   - Cards nos produtos
+   - Arquivo css/estilo.css com as cores da loja
+   - Bootstrap baixado na pasta (css/ e js/), como o professor mostrou
+
+2) JavaScript
+   - Relógio com data e hora (atualiza sozinho com setInterval)
+   - Aviso ao enviar cadastro, agendamento e contato
+   - Arquivo js/script.js separado do HTML
+
+3) Formulário de cadastro (cadastro.html)
+   - Cliente: nome, CPF, endereço, e-mail, telefone, sexo (radio)
+   - Pet: nome, raça, idade (number), tamanho (range) e tipo (select)
+   - Checkbox de promoções e textarea de observações
+   - Campos obrigatórios com required
+
+4) Agendamento (agendamento.html)
+   - Serviço: banho ou tosa
+   - Forma: tele-busca ou entrega no local
+   - Data (calendário) e horário
+   - Nome do tutor, pet e telefone
+
+5) Acessibilidade
+   - Atributo alt em todas as imagens
+   - Label em todos os campos
+   - Texto no botão do menu para leitor de tela
+   - Destaque visível quando navega com o teclado
+
+
+AJUSTES FEITOS NA FASE 2 (em relação à Fase 1)
+
+- Serviços ficaram só banho e tosa, como pede o enunciado
+- Produtos organizados em: acessórios, rações e higiene
+- Menu ganhou Cadastro e Agendamento
+- Site ficou mais fácil de usar no celular
+- Código separado em pastas: css/, js/, imagens/
+- Bootstrap passou a ficar na pasta do projeto, não só no link da internet
+
+
+COMO USAR
+
+1. Abra o index.html no navegador (ou use Live Server no VS Code)
+2. Use o menu no topo para navegar
+3. Em Cadastro, preencha os dados do cliente e do pet
+4. Em Agendamento, escolha banho ou tosa, a forma de atendimento e a data
+5. Os formulários mostram um alerta de confirmação (não enviam para servidor)
+
+
+PUBLICAÇÃO
+
+Repositório GitHub: https://github.com/bruno-dpo/petshop
+Site (GitHub Pages): https://bruno-dpo.github.io/petshop/
+
+Para publicar: suba os arquivos da pasta petshop no repositório e ative o GitHub Pages na branch main.
+
+
+ESTRUTURA DE ARQUIVOS
+
+petshop/
+  index.html
+  produtos.html
+  servicos.html
+  cadastro.html
+  agendamento.html
+  contato.html
+  ajuda.txt
+  css/estilo.css
+  css/bootstrap.min.css
+  js/script.js
+  js/bootstrap.bundle.min.js
+  imagens/ (fotos dos produtos e banners)
