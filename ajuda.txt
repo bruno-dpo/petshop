@@ -1,0 +1,68 @@
+ARQUIVO DE AJUDA - SITE MUNDO PET
+
+Aluno: Bruno H Menezes
+Disciplina: Fundamentos de Sistemas Web
+
+Fiz esse site para a Fase 1 do trabalho. E o site de um pet shop
+chamado Mundo Pet. Abaixo explico como ele funciona.
+
+
+AS PAGINAS
+
+O site tem 4 paginas:
+
+- index.html: e a pagina inicial, onde falo um pouco da loja e
+  mostro um resumo dos produtos e servicos.
+- produtos.html: aqui ficam os produtos separados por categoria.
+- servicos.html: aqui explico os servicos que a loja faz.
+- contato.html: telefone, email, endereco e um formulario.
+
+
+COMO USAR
+
+Em todas as paginas tem um menu la em cima com Inicio, Produtos,
+Servicos e Contato. Basta clicar em um deles para ir para outra
+pagina. No rodape tambem repeti esses links, para o caso da pessoa
+estar no fim da pagina.
+
+
+PRODUTOS
+
+Coloquei 6 produtos, 2 em cada categoria:
+
+Racao: Racao Premium Caes Adultos e Racao Filhotes Sabor Frango
+Brinquedos: Bolinha de Borracha e Corda para Mordida
+Higiene: Shampoo Antipulgas e Escova de Pelos
+
+Todos tem foto, uma descricao e o preco.
+
+
+SERVICOS
+
+Sao 4 servicos, todos com o valor na pagina:
+
+Banho e Tosa - R$ 70,00, com tele-busca
+Consulta Veterinaria - R$ 120,00, com tele-busca
+Adestramento Basico - R$ 90,00, sem tele-busca (o tutor leva o pet na loja)
+Tele-busca - R$ 25,00 ida e volta em Porto Alegre
+
+A tele-busca e quando a loja vai buscar o pet na casa do cliente
+e depois leva de volta. Para agendar qualquer um deles a pessoa
+liga no (51) 99999-0000.
+
+
+CONTATO
+
+Na pagina de contato tem os dados da loja e um formulario com nome,
+email, telefone, assunto e mensagem. Ele nao envia nada de verdade
+ainda, porque nessa fase e so HTML, sem JavaScript e sem servidor.
+Isso ficou para a Fase 2.
+
+
+COMO FIZ
+
+Usei so HTML, como pede o trabalho (sem CSS, sem JavaScript e sem
+Bootstrap). Escrevi no VS Code e publiquei no GitHub Pages.
+
+Repositorio: https://github.com/bruno-dpo/petshop
+Site: https://bruno-dpo.github.io/petshop/
